@@ -17,7 +17,7 @@ public class Triangulo {
 
     public Triangulo(double base, double altura) throws Exception {
         if (base <= 0) {
-            throw new Exception("La base tiene que ser positiva");
+            throw new ParametroNoPositivoException("La base tiene que ser positiva");
         }
         this.base = base;
 
